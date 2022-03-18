@@ -3,7 +3,7 @@ PROGRAM_NAME=exit_code
 build: $(PROGRAM_NAME).bin
 
 run: $(PROGRAM_NAME).bin
-	qemu-arm ./$(PROGRAM_NAME).bin												
+	qemu-arm ./$(PROGRAM_NAME).bin
 
 $(PROGRAM_NAME).o:
 	arm-linux-gnueabi-as $(PROGRAM_NAME).s -o $(PROGRAM_NAME).o
